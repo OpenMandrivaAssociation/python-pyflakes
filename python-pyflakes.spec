@@ -2,12 +2,12 @@
 
 Summary:	Simple program which checks Python source files for errors
 Name:		python-%{oname}
-Version:	2.3.1
+Version:	2.4.0
 Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		https://github.com/PyCQA/pyflakes
-Source0:	https://files.pythonhosted.org/packages/f1/e2/e02fc89959619590eec0c35f366902535ade2728479fc3082c8af8840013/pyflakes-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/p/%{oname}/%{oname}-%{version}.tar.gz
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3egg(setuptools)
 Provides:       pyflakes = %{EVRD}
