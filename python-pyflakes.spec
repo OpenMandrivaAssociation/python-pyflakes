@@ -2,7 +2,7 @@
 
 Summary:	Simple program which checks Python source files for errors
 Name:		python-%{oname}
-Version:	2.4.0
+Version:	2.5.0
 Release:	1
 License:	BSD
 Group:		Development/Python
