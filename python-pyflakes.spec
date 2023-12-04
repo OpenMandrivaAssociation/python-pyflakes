@@ -2,17 +2,16 @@
 
 Summary:	Simple program which checks Python source files for errors
 Name:		python-%{oname}
-Version:	3.0.1
-Release:	2
+Version:	3.1.0
+Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		https://github.com/PyCQA/pyflakes
 Source0:	https://files.pythonhosted.org/packages/source/p/%{oname}/%{oname}-%{version}.tar.gz
 BuildRequires:  pkgconfig(python)
-BuildRequires:  python3egg(setuptools)
-Provides:       pyflakes = %{EVRD}
-Obsoletes:      pyflakes < %{EVRD}
+BuildRequires:  python%{pyver}dist(setuptools)
 BuildArch:	noarch
+%rename pyflakes
 
 %description
 Pyflakes is a simple program which checks Python source files for errors. It is
@@ -34,7 +33,7 @@ not perform any checks on style.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{oname}-%{version}
+%autosetup -p1 -n %{oname}-%{version}
 
 %build
 %py3_build
