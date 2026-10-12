@@ -3,7 +3,7 @@
 Summary:	Simple program which checks Python source files for errors
 Name:		python-%{oname}
 Version:	3.4.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Python
 Url:		https://github.com/PyCQA/pyflakes
